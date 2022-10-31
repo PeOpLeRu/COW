@@ -1,0 +1,12 @@
+OOM	// print[0] -> 0
+MoO
+MoO
+MoO	// [0] += 3
+OOM	// print[0] -> 3
+moO	// [1]
+MoO
+MoO	// [1] += 2
+OOM	// print[1] -> 2
+mOo	// [0]
+MOo	// [0] -= 1
+OOM	// print[0] -> 2

@@ -1,0 +1,36 @@
+MoO MoO	// [0] = 2
+OOM	// print[0] -> 2
+
+moO	// [1]
+MoO MoO MoO MoO MoO MoO MoO MoO	// [1] = 8
+OOM	// print[1] -> 8
+
+moO	// [2]
+MoO MoO	// [2] = 2
+OOM	// print[2] -> 2
+
+mOo mOo	// [0]
+
+MOO	//  loop
+    moO moO // [2]
+    MMM	// copy [2] in register
+
+    MOO	// inner loop
+        mOo	// [1]
+        MOo	// [1] -= 1
+        moO	// [2]
+        MOo	// [2] -= 1
+    moo // end loop
+
+    MMM	// paste value in [2] from register
+
+    mOo mOo // [0]
+    MOo	// [0] -= 1
+
+moo	// end loop
+
+OOM	// print[0] -> 0
+moO	// [1]
+OOM	// print[1] -> 4
+moO	// [2]
+OOM	// print[2] -> 2

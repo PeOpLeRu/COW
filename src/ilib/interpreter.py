@@ -80,7 +80,7 @@ class Interpreter:
                     char = input("Enter char: ")
                     self.cow.set_cell_value(ord(char))
                 else:
-                    print(chr(value))
+                    print(chr(value), end="")
             case 5:
                 self.cow.dec_cell_value()
             case 6:
@@ -120,7 +120,7 @@ class Interpreter:
                 instr_index = self.str_to_index(token.value)
                 code_memory += [instr_index]
             else:
-                if iterator + 1 >= len(code_memory):
+                if need_move_iterator and iterator + 1 >= len(code_memory):
                     iterator = None
                     continue
                 if need_move_iterator:
@@ -128,7 +128,9 @@ class Interpreter:
                 instr_index = code_memory[iterator]
 
             if instr_index == 0:
-                if len(MOO_stack) != len(oom_stack):
+                if iterator != None and iterator not in oom_stack:
+                    oom_stack += [iterator]
+                elif iterator == None and len(code_memory) - 1 not in oom_stack:
                     oom_stack += [len(code_memory) - 1]
                 iterator = MOO_stack[level]
                 is_returned = True
@@ -141,7 +143,10 @@ class Interpreter:
                         iterator = oom_stack.pop()
                 else:
                     level += 1
-                    MOO_stack += [len(code_memory) - 1]
+                    if iterator != None:
+                        MOO_stack += [iterator]
+                    else:
+                        MOO_stack += [len(code_memory) - 1]
                 is_returned = False
                 need_move_iterator = True
             else:

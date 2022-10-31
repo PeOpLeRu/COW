@@ -1,0 +1,34 @@
+// тест программы с нерабочим циклом, внтури которого есть нерабочий цикл (первый не запускается по условию, второй игнорится)
+
+OOO
+
+MOO
+    OOO
+    MoO
+    MOo
+
+    MOO
+        OOO
+        Moo
+        oom
+    moo
+
+    MoO
+
+moo
+
+// print 'o'
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO
+
+Moo
+
+// print 'k'
+MOo MOo MOo MOo
+
+Moo

@@ -1,0 +1,38 @@
+// тест программы с рабочим циклом, внтури которого есть нерабочий цикл (не запускается по условию)
+
+MoO MoO // [0] = 2
+
+MOO
+    moO // [1]
+    OOO
+    MoO
+    MOo
+
+    MOO
+        OOO
+        Moo
+        oom
+    moo
+
+    mOo // [0]
+    MOo // [0] - 1
+
+moo
+
+OOO // [0] = 0
+
+// print 'o'
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO
+MoO MoO MoO
+
+Moo
+
+// print 'k'
+MOo MOo MOo MOo
+
+Moo
